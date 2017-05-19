@@ -1,0 +1,220 @@
+%------------------------------------
+% Sherry Yong Chen
+% Typesetting your academic CV in LaTeX
+%
+% URL: https://sherrychen.org
+% DISCLAIMER: This template is provided for free and without any guarantee
+% that it will correctly compile on your system if you have a non-standard
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11.5pt, a4paper]{article}
+\usepackage{fontspec}
+
+% DOCUMENT LAYOUT
+\usepackage{geometry}
+\geometry{a4paper, textwidth=5in, textheight=8in, marginparsep=5pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\large}
+
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm,
+bookmarks, colorlinks, breaklinks,
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Sherry Yong Chen - CV},
+	pdfauthor={Sherry Yong Chen},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}
+\hypersetup{linkcolor=black,citecolor=black,filecolor=black,urlcolor=black}
+
+%SYMBOLS
+\usepackage[misc]{ifsym}
+\usepackage{marvosym}
+\usepackage{url}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\newfontfamily{\FA}{fontawesome.otf}
+
+
+% DOCUMENT
+\begin{document}
+{\Huge NAME}\\[1cm]
+Address \\
+Country \\[.2cm]
+\Letter{ email@gmail.com} \\
+\Mundus~\url{ http://yourname.org} \\
+\faTwitter \href{link}{\thinspace accountname} \\
+
+%%\hrule
+\section*{\faLightbulbO \thinspace Areas of interest}
+
+\years{Broad} Blah blah \\
+\years{Narrow} Blah blah Blah \\
+
+%\hrule
+\section*{\faGraduationCap \thinspace Education}
+
+\subsection*{Degree seeking programs}
+\noindent
+\years{2015-2017}\textbf{B.A in Linguistics}, University of Blah  \\
+ • First Class Honours \\
+ • Special recognition: Undergraduate Research Fellow
+
+ %\hrule
+ \subsection*{Non-degree studies}
+ \noindent
+ \years{2017 Summer}Some Summer School, University of Blah, Country \\
+
+
+%\hrule
+\section*{\faUniversity \thinspace Research experiences}
+
+\years{2015-2017}Research Assistant in A Very Nice Lab, \textsc{University of Blah} \\
+  • PI: Dr Blah Blah \\
+  • Projects: Blah Blah Blah \\
+
+
+%\hrule
+\section*{\faBook \thinspace Publications}
+
+\subsection*{Book chapters}
+\noindent
+\years{2017}\textbf{Name.} Title. Book.
+
+\subsection*{Articles}
+\noindent
+\years{2017}\textbf{Name.} Title. Jounral. \\
+
+%\hrule
+\section*{\faEdit \thinspace Manuscripts}
+
+\subsection*{Work in progress}
+\noindent
+\years{2017}\textbf{Name.} Title.
+
+\subsection*{Thesis \& Research papers}
+\noindent
+\years{2017}\textbf{Name.} Title. \\
+
+
+%\hrule
+\section*{\faMicrophone \thinspace Posters \& Presentations}
+
+\subsection*{Oral presentations}
+\noindent
+\years{2017}\textbf{Name.} Title. Presentation given at Blah Conference, Date \& Year, Univeristy of Blah, Country.
+
+\subsection*{Conference posters}
+\noindent
+\years{2017}\textbf{Name.} Title. Poster presented at Blah Conference, Date \& Year, Place, Country.
+
+
+\subsection*{Public talks}
+\noindent
+\years{2017}\textbf{Name.} Title. Talk given at Blah Event, Date \& Year, Organizer, Country. \\
+
+
+%\hrule
+\section*{\faTrophy \thinspace Honors, awards \& scholarships}
+
+\years{2016-2017}Blah Scholarship, University of Blah \\
+
+
+%\hrule
+\section*{\faMoney \thinspace Fundings \& grants}
+
+\subsection*{Internal \& External fundings}
+\noindent
+\years{2016-2017}Departmental Funding
+
+\subsection*{Travel grants}
+\noindent
+\years{2015-2017}Faculty Travel Grant, University of Blah \\
+
+
+%\hrule
+\section*{\faCalendarCheckO \thinspace Professional services}
+
+\subsection*{Reviewing}
+\noindent
+\years{2017-}\emph{Journal}.
+
+\subsection*{Organizing}
+\noindent
+\years{2016-2017}Organizer, \emph{Event}. Department of Blah, University of Blah \\
+
+\subsection*{Outreach}
+\noindent
+\years{2017 Spring}Linguistic Consultant for \emph{Event}, Organizer \\
+
+
+%\hrule
+\section*{\faUsers \thinspace Membership}
+
+\years{2017-}Linguistic Society of Blah \\
+
+
+%\hrule
+\section*{\faWrench \thinspace Skills}
+
+\subsection*{Languages}
+English: full professional proficiency \\
+Spanish and German: elementary level
+
+\subsection*{Computing}
+Programming \& Statistics: R, SPSS, JavaScript, Python \\
+Experimental: E-Prime, E-Run, Experiment Builder, Eyelink \\
+
+
+
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- }
+\end{center}
+
+\end{document}
